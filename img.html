@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/img.css">
+        <script type=text/javascript src=jQuery.js ></script>
+    </head>
+    <body>
+     
+
+            <div id=collage-container>
+                <img src="img/PXL_20230914_112541852.jpg" id=collage-one />
+                <img src="img/WhatsApp Image 2023-09-30 at 00.25.32.jpg" id=collage-two />
+                <img src="img/WhatsApp Image 2023-09-30 at 00.32.50.jpg" id=collage-three />
+                <img src="img/WhatsApp Image 2023-09-30 at 00.18.33.jpg" id=collage-four />
+                <img src="img/WhatsApp Image 2023-09-30 at 00.27.28.jpg" id=collage-five />
+                <img src="img/WhatsApp Image 2023-09-30 at 00.33.05.jpg" id=collage-six />
+                <img src="img/WhatsApp Image 2023-09-30 at 00.51.38.jpg" id=collage-seven />
+            </div>
+
+
+           
+            <script type=text/javascript>
+                $(document).ready(function(){
+                  $(#collage-container img).mouseover(function(){
+                  $(#collage-container img).css(z-index,1);
+                  $(this).css(z-index,999);
+                  $(this).fadeOut(100,function(){ $(this).fadeIn(1000);  });
+                  });
+                });
+            </script>
+    </body>
+</html>
